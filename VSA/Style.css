@@ -1,0 +1,186 @@
+/*Bootstrap overwrites*/
+#sidebar li > a:hover, .footNav > a:hover{
+    color: rgb(65,161,64);
+    text-decoration: none;
+}
+#sidebar .d-inline >a:hover, .socialNav:hover{
+    color: transparent;
+}
+/*Page Nav underlining*/
+#sidebar #navText li > a, #sidebar div > #vsaAddress:before{
+    position:relative;
+}
+#sidebar #navText li > a:before, #sidebar div > #vsaAddress:before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0;
+    height:2px;
+    background-color: rgb(65,161,64);
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+}
+#sidebar #navText li > a:hover:before{
+    width:100%;
+    transform: scaleX(1);
+}
+/*perm underline and color change of active page*/
+#sidebar #navText #nav-active > a:before{
+    width:100%;
+    transform: scaleX(1);
+}
+#sidebar #nav-active a{
+    color: rgb(65,161,64);
+}
+/*underline of address*/
+#sidebar div > #vsaAddress:before{
+    content:"";
+    position:absolute;
+    bottom:60px;
+    left:12px;
+    width:0;
+    height:2px;
+    background-color: rgb(65,161,64);
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+}
+#sidebar div > #vsaAddress:hover:before{
+    width:85%;
+    transform: scaleX(1);
+}
+/*form focus glow change*/
+.form-control:focus{
+    border: rgb(65,161,64);
+    box-shadow: inset 0 1px 1px rgb(65,161,64), 0 0 8px rgb(65,161,64);
+}
+/*Animate.css overwrites*/
+
+
+/*general stylings*/
+body, a, .text{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/*sidebar*/
+.sidebar{
+    width: 20%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.VSALogo{
+    display: block;
+    margin: 3em auto 6em;
+    width: 75%;
+}
+ul li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+.navText{
+    font-weight: 600;
+    letter-spacing: .2em;
+}
+.footNav{
+    font-size: 14px;
+    width: 100%;
+    padding-right: 30px;
+    bottom: 3em;
+}
+.socialIcons{
+    padding: 5px;
+    width: 30px;
+}
+/*end sidebar*/
+
+/*homepage*/
+.col-9-5{
+    width: 80%;
+}
+.overCanvas{
+    overflow: visible;
+}
+.heightCanvas{
+    height: 100vh;
+}
+.cap{
+    min-height: 42%;
+}
+.capText{
+    font-size: 44px;
+    font-family: "Lucida Calligraphy", Arial, sans-serif;
+}
+.capText2{
+    font-size: 22px;
+    font-family: "Lucida Calligraphy", Arial, sans-serif;
+    font-weight: 300;
+}
+.padL0{
+    padding-left: 0;
+}
+.right0{
+    right: 0;
+}
+/*end homepage*/
+
+/*Board*/
+.header{
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.memberHeader{
+    margin: 3em 0 2em 0;
+    right: 0;
+    padding-bottom: 3em;
+}
+.pad{
+    padding: 10px;
+}
+.member{
+    width: 100%;
+    float: left;
+    background: rgb(51,51,51);
+}
+.memberImage{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+.members{
+    display: block;
+    max-width: 100%;
+}
+.memberInfo{
+    color: rgb(255,255,245);
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.role{
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+/*end board*/
+
+/*gallery*/
+
+/*end gallery*/
+
+/*contact us*/
+.contactIcon{
+    padding: 1em;
+    width: 20%;
+}
+.star{
+    color: red;
+}
+/*end contact us*/

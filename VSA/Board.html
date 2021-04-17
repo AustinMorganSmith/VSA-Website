@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vietnamese Student Association Gallery</title>
+  <!-- BootStrap Style sheets-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!--Animate css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom javascript-->
+  <script src="scripts.js"></script>
+
+  <!-- Custom style sheet-->
+  <link rel="stylesheet" href="Style.css"/>
+</head>
+<body class="overflow-auto">
+<div class="row">
+
+  <!--Collapsable nav on right side-->
+  <nav class="sidebar text-center position-fixed heightCanvas" id="sidebar">
+
+    <!--VSA logo-->
+    <a href="Homepage.html">
+      <img class="VSALogo" src="Images/VSA logo1.jpg" alt="Vietnamese Student Association at UNC Charlotte" title="Vietnamese Student Association">
+    </a>
+
+    <!--Navbar-->
+    <ul id="navText" class="navbar-nav text-uppercase font-weight-bold navText">
+      <li>
+        <a href="Homepage.html">Homepage</a>
+      </li>
+      <li id="nav-active">
+        <a href="Board.html">Board</a>
+      </li>
+      <li>
+        <a href="Gallery.html">Gallery</a>
+      </li>
+      <li>
+        <a href="Contact.html">Contact Us</a>
+      </li>
+    </ul>
+
+    <!--footer-->
+    <div class="footer text-center position-absolute footNav">
+      <span>Vietnamese Student Association</span>
+      <a id="vsaAddress" style="font-size: 14px" href="https://www.google.com/maps/place/University+of+North+Carolina+at+Charlotte/@35.3070929,-80.7373527,17z/data=!3m1!4b1!4m5!3m4!1s0x88541c1ad0a92357:0x6b3f67f7f19324f3!8m2!3d35.3070929!4d-80.735164">
+        <address class="text-center">
+          9201 University City Blvd, Charlotte, NC 28223
+        </address>
+      </a>
+
+      <!--Social icons-->
+      <ul class="padL0">
+        <li class="d-inline">
+          <a href="https://www.instagram.com/unccvsa/">
+            <img src="Images/iconfinder_Instagram_glyph_svg_5335781.png" class="socialIcons" alt="Instagram">
+          </a>
+        </li>
+        <li class="d-inline">
+          <a href="https://www.youtube.com/channel/UCZ4oPBs7MpqvZoKq6IHar6A?view_as=subscriber">
+            <img src="Images/iconfinder_BW_Youtube_glyph_svg_5305164.png" class="socialIcons" alt="Youtube">
+          </a>
+        </li>
+        <li class="d-inline">
+          <a href="https://www.facebook.com/UNCCVSA">
+            <img src="Images/iconfinder_BW_Facebook_2_glyph_svg_5305153.png" class="socialIcons" alt="Facebook">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Board Members-->
+  <div class="col-9-5 float-right memberHeader position-absolute">
+    <div class="text-left memberMargin">
+      <h3 class="header animate__animated animate__fadeInUp animate__slow">Our Board</h3>
+    </div>
+    <!--Members enlarge on hover (implement later)/fadeUp from bottom of screen 1 by 1 (figure out how to make more smooth later)-->
+    <div class="row w-100">
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__fast">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/1.jpg" alt="President">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Kyanh Huyn</p>
+            <p>President</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/2.jpg" alt="Vice President">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Ba Loc Le</p>
+            <p>Vice President</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__slow">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/3.jpg" alt="Secretary">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Tyler Ho</p>
+            <p>Secretary</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__delay-1s">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/4.jpg" alt="Treasurer">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Kelly Pham</p>
+            <p>Treasurer</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__slower">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/5.jpg" alt="Culture Chair">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Mary Pham</p>
+            <p>Culture Chair</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__slower">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/6.jpg" alt="Philanthropy">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Davis Nguyen</p>
+            <p>Philanthropy Chair</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__slower">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/7.jpg" alt="Media Director">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Ivy Le</p>
+            <p>Media Director</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__slower">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/8.jpg" alt="Public Relations Chair">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Anna Le</p>
+            <p>Public Relations Chair</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__delay-2s animate__slow">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/9.jpg" alt="Intern">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Vivian Nguyen</p>
+            <p>Intern</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__delay-2s animate__slow">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/10.jpg" alt="Intern">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Danny Mai</p>
+            <p>Intern</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__delay-2s animate__slow">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/11.jpg" alt="Intern">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Bill Chen</p>
+            <p>Intern</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__delay-2s animate__slow">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/12.jpg" alt="Intern">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Helen Tran</p>
+            <p>Intern</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pad animate__animated animate__fadeInUpBig animate__delay-3s animate__slow">
+        <div class="member">
+          <div class="memberImage">
+            <img class="members" src="Images/Board/13.jpg" alt="Intern">
+          </div>
+          <div class="memberInfo">
+            <p class="role">Cayla Curry</p>
+            <p>Intern</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

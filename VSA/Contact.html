@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vietnamese Student Association Gallery</title>
+    <!-- BootStrap Style sheets-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--Animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom javascript-->
+    <script src="scripts.js"></script>
+
+    <!-- Custom style sheet-->
+    <link rel="stylesheet" href="Style.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="row">
+
+    <!--Collapsable nav on right side-->
+    <nav class="sidebar text-center position-fixed heightCanvas" id="sidebar">
+
+        <!--VSA logo-->
+        <a href="Homepage.html">
+            <img class="VSALogo" src="Images/VSA logo1.jpg" alt="Vietnamese Student Association at UNC Charlotte" title="Vietnamese Student Association">
+        </a>
+
+        <!--Navbar-->
+        <ul id="navText" class="navbar-nav text-uppercase font-weight-bold navText">
+            <li>
+                <a href="Homepage.html">Homepage</a>
+            </li>
+            <li>
+                <a href="Board.html">Board</a>
+            </li>
+            <li>
+                <a href="Gallery.html">Gallery</a>
+            </li>
+            <li id="nav-active">
+                <a href="Contact.html">Contact Us</a>
+            </li>
+        </ul>
+
+        <!--footer-->
+        <div class="footer text-center position-absolute footNav">
+            <span>Vietnamese Student Association</span>
+            <a id="vsaAddress" style="font-size: 14px" href="https://www.google.com/maps/place/University+of+North+Carolina+at+Charlotte/@35.3070929,-80.7373527,17z/data=!3m1!4b1!4m5!3m4!1s0x88541c1ad0a92357:0x6b3f67f7f19324f3!8m2!3d35.3070929!4d-80.735164">
+                <address class="text-center">
+                    9201 University City Blvd, Charlotte, NC 28223
+                </address>
+            </a>
+
+            <!--Social icons-->
+            <ul class="padL0">
+                <li class="d-inline">
+                    <a href="https://www.instagram.com/unccvsa/">
+                        <img src="Images/iconfinder_Instagram_glyph_svg_5335781.png" class="socialIcons" alt="Instagram">
+                    </a>
+                </li>
+                <li class="d-inline">
+                    <a href="https://www.youtube.com/channel/UCZ4oPBs7MpqvZoKq6IHar6A?view_as=subscriber">
+                        <img src="Images/iconfinder_BW_Youtube_glyph_svg_5305164.png" class="socialIcons" alt="Youtube">
+                    </a>
+                </li>
+                <li class="d-inline">
+                    <a href="https://www.facebook.com/UNCCVSA">
+                        <img src="Images/iconfinder_BW_Facebook_2_glyph_svg_5305153.png" class="socialIcons" alt="Facebook">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Contact Us **Revamp this page** (Currently under construction/need better design)-->
+    <div class="col-9-5 float-right memberHeader position-absolute">
+        <div class="text-left memberMargin">
+            <h3 class="header animate__animated animate__fadeInUp animate__slow">Contact Us</h3>
+        </div>
+        <div class="row mr-0">
+            <div class="col-lg-6 mb-2">
+                <form class="form-horizontal">
+                    <div class="form-group animate__animated animate__fadeInUpBig">
+                        <span class="star">*</span>
+                        <label class="control-label col-lg-2 pl-0" for="name">Name:</label>
+                        <div class="w-100">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
+                        </div>
+                    </div>
+                    <div class="form-group animate__animated animate__fadeInUpBig animate__slow">
+                        <span class="star">*</span>
+                        <label class="control-label col-lg-2 pl-0" for="email">Email:</label>
+                        <div class="w-100">
+                            <input type="text" class="form-control" id="email" placeholder="Enter your email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group animate__animated animate__fadeInUpBig animate__delay-1s">
+                        <span class="star">*</span>
+                        <label class="control-label col-lg-2 pl-0" for="subject">Subject:</label>
+                        <div class="w-100">
+                            <input type="text" class="form-control" id="subject" placeholder="Enter the subject" name="subject" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 pl-0 animate__animated animate__fadeInUpBig animate__delay-1s animate__slow">
+                        <button type="submit" class="btn btn-outline-dark">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 mb-2">
+                <a class="socialNav" href="https://ninerengage.uncc.edu/organization/vietnamese-student-association-at-uncc">
+                    <img src="Images/ninerengage.png" class="w-100 mb-2  animate__animated animate__fadeInUpBig" alt="ninerengage">
+                </a>
+                <a class="socialNav" href="https://www.instagram.com/unccvsa/">
+                    <img src="Images/iconfinder_1_Instagram_colored_svg_1_5296765.png" class="w-50  animate__animated animate__fadeInUpBig animate__slow" alt="Instagram">
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a class="socialNav mb-2" href="https://www.youtube.com/channel/UCZ4oPBs7MpqvZoKq6IHar6A?view_as=subscriber">
+                    <img src="Images/iconfinder_1_Youtube_colored_svg_5296521.png" class="w-50 mb-2 animate__animated animate__fadeInUpBig" alt="Youtube">
+                </a>
+                <a class="socialNav" href="https://www.facebook.com/UNCCVSA">
+                    <img src="Images/iconfinder_1_Facebook2_colored_svg_5296500.png" class="w-50 animate__animated animate__fadeInUpBig animate__slow" alt="Facebook">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

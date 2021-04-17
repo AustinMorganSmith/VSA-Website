@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vietnamese Student Association Gallery</title>
+    <!-- BootStrap Style sheets-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--Animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom javascript-->
+    <script src="scripts.js"></script>
+
+    <!-- Custom style sheet-->
+    <link rel="stylesheet" href="Style.css"/>
+</head>
+<body class="overflow-hidden">
+<div class="row">
+
+    <!--Collapsable nav on right side (Implement collapsing feature later)-->
+    <nav id="sidebar" class="sidebar text-center position-fixed heightCanvas">
+
+        <!--VSA logo-->
+        <a href="Homepage.html">
+            <img class="VSALogo" src="Images/VSA logo1.jpg" alt="Vietnamese Student Association at UNC Charlotte" title="Vietnamese Student Association">
+        </a>
+
+        <!--Navbar-->
+        <ul id="navText" class="navbar-nav text-uppercase font-weight-bold navText">
+            <li id="nav-active">
+                <a href="Homepage.html">Homepage</a>
+            </li>
+            <li>
+                <a href="Board.html">Board</a>
+            </li>
+            <li>
+                <a href="Gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="Contact.html">Contact Us</a>
+            </li>
+        </ul>
+
+        <!--footer-->
+        <div class="footer text-center position-absolute footNav">
+            <span>Vietnamese Student Association</span>
+            <a id="vsaAddress" href="https://www.google.com/maps/place/University+of+North+Carolina+at+Charlotte/@35.3070929,-80.7373527,17z/data=!3m1!4b1!4m5!3m4!1s0x88541c1ad0a92357:0x6b3f67f7f19324f3!8m2!3d35.3070929!4d-80.735164">
+                <address class="text-center">
+                    9201 University City Blvd, Charlotte, NC 28223
+                </address>
+            </a>
+
+            <!--Social icons-->
+            <ul class="padL0">
+                <li class="d-inline">
+                    <a href="https://www.instagram.com/unccvsa/">
+                        <img src="Images/iconfinder_Instagram_glyph_svg_5335781.png" class="socialIcons" alt="Instagram">
+                    </a>
+                </li>
+                <li class="d-inline">
+                    <a href="https://www.youtube.com/channel/UCZ4oPBs7MpqvZoKq6IHar6A?view_as=subscriber">
+                        <img src="Images/iconfinder_BW_Youtube_glyph_svg_5305164.png" class="socialIcons" alt="Youtube">
+                    </a>
+                </li>
+                <li class="d-inline">
+                    <a href="https://www.facebook.com/UNCCVSA">
+                        <img src="Images/iconfinder_BW_Facebook_2_glyph_svg_5305153.png" class="socialIcons" alt="Facebook">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Carousel only indicators-->
+    <div id="hCarousel" class="col-9-5 carousel slide carousel-fade position-absolute right0 border-0 animate__animated animate__fadeIn animate__slower" data-ride="carousel">
+        <!-- indicators. Implement them appearing on the right side of screen later-->
+        <ol class="carousel-indicators">
+            <li data-target="#hCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#hCarousel" data-slide-to="1"></li>
+            <li data-target="#hCarousel" data-slide-to="2"></li>
+            <li data-target="#hCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!--wrapper for slides-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100 heightCanvas" src="Images/VSA Executive-Board Banner Cropped.jpg" alt="Executive Board Banner">
+                <div class="carousel-caption cap animate__animated animate__fadeInUp animate__slower">
+                    <h1 class="capText">Vietnamese Student Association</h1>
+                    <p class="capText2">at UNC Charlotte</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100 heightCanvas" src="Images/VSA Dodgeball Tournament 2019/VSA Dodgeball Tournament 2019 Group3 crop.jpg" alt="VSA Dodgeball Tournament 2019">
+                <div class="carousel-caption cap animate__animated animate__fadeInUp animate__slower">
+                    <h1 class="capText">VSA Dodgeball Tournament</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100 heightCanvas" src="Images/Annual VietNight Celebration/Annual VietNight Celebration 10.jpg" alt="Annual VietNight Celebration">
+                <div class="carousel-caption cap animate__animated animate__fadeInUp animate__slower">
+                    <h1 class="capText">Annual VietNight Celebration</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100 heightCanvas" src="Images/VSA Thanksgiving Potluck/VSA Thanksgiving Potluck Group2.jpg" alt="VSA Thanksgiving Potluck">
+                <div class="carousel-caption cap animate__animated animate__fadeInUp animate__slower">
+                    <h1 class="capText">VSA Thanksgiving Potluck</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
