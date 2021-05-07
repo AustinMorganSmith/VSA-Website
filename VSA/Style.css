@@ -13,7 +13,7 @@
 #sidebar #navText li > a:before, #sidebar div > #vsaAddress:before{
     content:"";
     position:absolute;
-    bottom:0;
+    bottom:-5px;
     left:0;
     width:0;
     height:2px;
@@ -35,15 +35,8 @@
 }
 /*underline of address*/
 #sidebar div > #vsaAddress:before{
-    content:"";
-    position:absolute;
     bottom:60px;
     left:12px;
-    width:0;
-    height:2px;
-    background-color: rgb(65,161,64);
-    transition: transform 300ms ease-in-out;
-    transform: scaleX(0);
 }
 #sidebar div > #vsaAddress:hover:before{
     width:85%;
@@ -156,6 +149,11 @@ ul li{
 .members{
     display: block;
     max-width: 100%;
+    transition: 1s;
+}
+.members:hover{
+    transform: scale(1.2);
+    transition: 1s;
 }
 .memberInfo{
     color: rgb(255,255,245);
